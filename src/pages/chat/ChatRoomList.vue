@@ -40,7 +40,7 @@ function hidePaymentModal() {
 </script>
 
 <template>
-  <div class="flex h-screen overflow-hidden pt-16">
+  <div class="flex h-screen overflow-hidden mt-16">
     <!-- Sidebar -->
     <div class="w-1/4 bg-white border-r border-gray-300 sm:w-1/3 md:w-1/4 lg:block hidden">
       <!-- Sidebar Header -->
