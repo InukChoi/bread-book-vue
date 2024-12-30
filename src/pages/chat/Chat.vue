@@ -30,7 +30,7 @@ function selectChatRoom(room) {
 </script>
 
 <template>
-  <div class="flex h-screen overflow-hidden pt-16">
+  <div class="flex h-screen overflow-hidden mt-16">
     <!-- Sidebar -->
     <div class="w-1/4 bg-white border-r border-gray-300 sm:w-1/3 md:w-1/4 lg:block hidden">
       <!-- Sidebar Header -->
@@ -39,7 +39,7 @@ function selectChatRoom(room) {
       </header>
 
       <!-- Contact List -->
-      <div class="overflow-y-auto h-screen p-3 mb-9 pb-20 h-full overflow-y-scroll scrollbar scrollbar-thumb-gray-500 scrollbar-track-gray-200">
+      <div class="overflow-y-auto h-full p-3 pb-20 scrollbar scrollbar-thumb-gray-500 scrollbar-track-gray-200">
         <!-- Dynamic Chat Room List -->
         <div
           v-for="room in chatRoomStore.chatRooms"
