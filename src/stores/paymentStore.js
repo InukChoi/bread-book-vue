@@ -39,7 +39,7 @@ export const usePaymentStore = defineStore('payment', {
 
         async orders() {
             const response = await axios.post(
-                "https://ab70cf08-b170-4dd5-8dc0-5aa1c09ae618.mock.pstmn.io/orderList"
+                "https://d09b3780-f25b-445b-9f45-3eecc45c906b.mock.pstmn.io/orderList"
             );
             this.ordersList = response.data;
         },
@@ -53,14 +53,14 @@ export const usePaymentStore = defineStore('payment', {
 
         async pays() {
             const response = await axios.post(
-                "https://ab70cf08-b170-4dd5-8dc0-5aa1c09ae618.mock.pstmn.io/payList"
+                "https://d09b3780-f25b-445b-9f45-3eecc45c906b.mock.pstmn.io/payList"
             );
             this.paysList = response.data;
         },
 
         async paymentDetails() {
             const response = await axios.post(
-                "https://ab70cf08-b170-4dd5-8dc0-5aa1c09ae618.mock.pstmn.io/paymentDetails"
+                "https://d09b3780-f25b-445b-9f45-3eecc45c906b.mock.pstmn.io/paymentDetails"
             );
             return this.details = response.data;
         },
